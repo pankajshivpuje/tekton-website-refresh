@@ -1,4 +1,4 @@
-baseURL: /tekton-website-refresh/
+baseURL: /
 title: Tekton
 minify:
   minifyOutput: true
@@ -53,7 +53,6 @@ params:
     logo:
       path: images/tekton-horizontal-color.png
       dark: images/tekton-horizontal-color.png
-      link: /
       width: 140
       height: 36
 

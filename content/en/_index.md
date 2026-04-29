@@ -5,7 +5,7 @@ description: "Tekton is a cloud-native, open-source framework for creating CI/CD
 ---
 
 <div class="hero-center hx-mt-6">
-  <img src="/images/tekton-icon-color.png" alt="Tekton" class="hero-logo" />
+  <img src="images/tekton-icon-color.png" alt="Tekton" class="hero-logo" />
 </div>
 
 <div class="hero-center hx-mb-6">
@@ -75,7 +75,7 @@ description: "Tekton is a cloud-native, open-source framework for creating CI/CD
 
 <div class="cncf-banner">
   <a href="https://www.cncf.io/blog/2026/03/24/tekton-becomes-a-cncf-incubating-project/" class="cncf-banner-inner">
-    <img src="/partner-logos/cncf.png" alt="CNCF" class="cncf-logo" />
+    <img src="partner-logos/cncf.png" alt="CNCF" class="cncf-logo" />
     <span>Tekton is an incubating project at the <strong>Cloud Native Computing Foundation</strong></span>
   </a>
 </div>
