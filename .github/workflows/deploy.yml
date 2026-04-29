@@ -32,7 +32,7 @@ jobs:
           wget -qO- "https://github.com/sass/dart-sass/releases/download/${DART_SASS_VERSION}/dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz" \
             | sudo tar xz -C /opt
           echo "/opt/dart-sass" >> "$GITHUB_PATH"
-          sass --version
+          /opt/dart-sass/sass --version
 
       - name: Checkout
         uses: actions/checkout@v4
