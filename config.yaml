@@ -1,4 +1,4 @@
-baseURL: /
+baseURL: /tekton-website-refresh/
 title: Tekton
 minify:
   minifyOutput: true
