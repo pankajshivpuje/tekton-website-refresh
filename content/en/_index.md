@@ -54,17 +54,17 @@ description: "Tekton is a cloud-native, open-source framework for creating CI/CD
 </div>
 
 <div class="quicklinks-grid">
-  <a href="/docs/installation/" class="quicklinks-card">
+  <a href='{{< relurl "docs/installation/" >}}' class="quicklinks-card">
     <h3 class="quicklinks-title">Install Tekton</h3>
     <p class="quicklinks-desc">Get up and running with Tekton Pipelines on your Kubernetes cluster.</p>
     <span class="quicklinks-link">Installation guide &rarr;</span>
   </a>
-  <a href="/community/" class="quicklinks-card">
+  <a href='{{< relurl "community/" >}}' class="quicklinks-card">
     <h3 class="quicklinks-title">Contributions Welcome</h3>
     <p class="quicklinks-desc">Tekton is an open community and we welcome contributions of all kinds.</p>
     <span class="quicklinks-link">Join the community &rarr;</span>
   </a>
-  <a href="/docs/getting-started/" class="quicklinks-card">
+  <a href='{{< relurl "docs/getting-started/" >}}' class="quicklinks-card">
     <h3 class="quicklinks-title">Getting Started</h3>
     <p class="quicklinks-desc">Follow the tutorial to learn the basics and run your first pipeline.</p>
     <span class="quicklinks-link">Start the tutorial &rarr;</span>
