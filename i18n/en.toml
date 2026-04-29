@@ -5,6 +5,15 @@ other = "Documentation"
 [Blog]
 other = "Blog"
 
+[Components]
+other = "Components"
+
+[Solutions]
+other = "Solutions"
+
+[CaseStudies]
+other = "Case Studies"
+
 [Community]
 other = "Community"
 
