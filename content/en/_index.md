@@ -73,6 +73,23 @@ description: "Tekton is a cloud-native, open-source framework for creating CI/CD
 
 {{< latest-posts count="3" >}}
 
+<div class="trusted-by">
+  <p class="trusted-by-label">Trusted by leading organizations worldwide</p>
+  <div class="trusted-by-logos">
+    <img src="images/adopters/google.svg" alt="Google" class="trusted-by-logo" />
+    <img src="images/adopters/ibm.svg" alt="IBM" class="trusted-by-logo" />
+    <img src="images/adopters/redhat.svg" alt="Red Hat" class="trusted-by-logo" />
+    <img src="images/adopters/alibaba.svg" alt="Alibaba" class="trusted-by-logo" />
+    <img src="images/adopters/Nubank_logo_2021.svg" alt="Nubank" class="trusted-by-logo" />
+    <img src="images/adopters/alauda.svg" alt="Alauda" class="trusted-by-logo" />
+    <img src="images/adopters/giantswarmio.svg" alt="Giant Swarm" class="trusted-by-logo" />
+    <img src="images/adopters/Allianz_Direct.svg" alt="Allianz Direct" class="trusted-by-logo" />
+    <img src="images/adopters/Marriott_Vacations.svg" alt="Marriott Vacations" class="trusted-by-logo" />
+    <img src="images/adopters/kadaster.svg" alt="Kadaster" class="trusted-by-logo" />
+    <img src="images/adopters/onestock.svg" alt="OneStock" class="trusted-by-logo" />
+  </div>
+</div>
+
 <div class="cncf-banner">
   <a href="https://www.cncf.io/blog/2026/03/24/tekton-becomes-a-cncf-incubating-project/" class="cncf-banner-inner">
     <img src="partner-logos/cncf.png" alt="CNCF" class="cncf-logo" />
