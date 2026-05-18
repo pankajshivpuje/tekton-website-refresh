@@ -2,7 +2,7 @@ name: Deploy Hugo to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches: [main, website-revamp]
   workflow_dispatch:
 
 permissions:
@@ -55,6 +55,7 @@ jobs:
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
+          HUGO_SECURITY_HTTP_URLS: '.*'
           TZ: America/Los_Angeles
         run: hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
 
