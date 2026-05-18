@@ -39,10 +39,10 @@ languages:
     languageName: English
     weight: 1
     params:
-      description: Cloud Native CI/CD
+      description: Kubernetes Native CI/CD
 
 params:
-  description: Cloud Native CI/CD
+  description: Kubernetes Native CI/CD
   images:
     - /images/tekton-og-share.png
   github_repo: https://github.com/tektoncd/website
