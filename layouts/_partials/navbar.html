@@ -59,10 +59,25 @@
         {{- else if .Params.icon -}}
           {{- if not $link -}}{{ warnf "Icon menu item '%s' has no URL" .Name }}{{- end -}}
           {{- $rel := cond (eq .Params.icon "mastodon") "noreferrer me" "noreferrer" }}
-          <a class="hx:p-2 hx:text-current" {{ if $external }}target="_blank" rel="{{ $rel }}"{{ end }} href="{{ $link }}" title="{{ or (T .Identifier) .Name | safeHTML }}">
-            {{- partial "utils/icon.html" (dict "name" .Params.icon "attributes" (printf "height=%d" $iconHeight)) -}}
-            <span class="hx:sr-only">{{ or (T .Identifier) .Name | safeHTML }}</span>
-          </a>
+          {{- if eq .Params.icon "github" -}}
+            <div class="hx:flex hx:items-center hx:gap-1.5">
+              <a class="hx:p-2 hx:text-current" target="_blank" rel="noreferrer" href="{{ $link }}" title="{{ or (T .Identifier) .Name | safeHTML }}">
+                {{- partial "utils/icon.html" (dict "name" "github" "attributes" (printf "height=%d" $iconHeight)) -}}
+                <span class="hx:sr-only">{{ or (T .Identifier) .Name | safeHTML }}</span>
+              </a>
+              {{- with site.Params.github_repo_for_badges -}}
+                <a class="github-badges hx:hidden hx:md:flex hx:items-center hx:gap-1" href="https://github.com/{{ . }}" target="_blank" rel="noreferrer" title="GitHub Stars & Forks">
+                  <img src="https://img.shields.io/github/stars/{{ . }}?style=social" alt="GitHub stars" loading="lazy" height="20">
+                  <img src="https://img.shields.io/github/forks/{{ . }}?style=social" alt="GitHub forks" loading="lazy" height="20">
+                </a>
+              {{- end -}}
+            </div>
+          {{- else -}}
+            <a class="hx:p-2 hx:text-current" {{ if $external }}target="_blank" rel="{{ $rel }}"{{ end }} href="{{ $link }}" title="{{ or (T .Identifier) .Name | safeHTML }}">
+              {{- partial "utils/icon.html" (dict "name" .Params.icon "attributes" (printf "height=%d" $iconHeight)) -}}
+              <span class="hx:sr-only">{{ or (T .Identifier) .Name | safeHTML }}</span>
+            </a>
+          {{- end -}}
         {{- end -}}
       {{- end -}}
     {{- end -}}
