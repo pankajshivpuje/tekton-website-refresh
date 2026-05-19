@@ -46,6 +46,7 @@ params:
   images:
     - /images/tekton-og-share.png
   github_repo: https://github.com/tektoncd/website
+  github_repo_for_badges: tektoncd/pipeline
 
   navbar:
     displayTitle: false
@@ -114,17 +115,23 @@ menu:
       name: Community
       pageRef: /community
       weight: 6
-    - identifier: GitHub
-      name: GitHub
-      url: https://github.com/tektoncd
+    - identifier: search
       weight: 7
       params:
-        icon: github
-    - identifier: search
+        type: search
+    - identifier: GitHub
+      name: GitHub
+      url: https://github.com/tektoncd/pipeline
       weight: 8
       params:
-        type: search
-    - identifier: theme-toggle
+        icon: github
+    - identifier: Slack
+      name: Slack
+      url: https://join.slack.com/t/tektoncd/shared_invite/zt-1z8ctzsyv-wLXWwA2Rl3AOhcNGqpWRUw
       weight: 9
+      params:
+        icon: slack
+    - identifier: theme-toggle
+      weight: 10
       params:
         type: theme-toggle
