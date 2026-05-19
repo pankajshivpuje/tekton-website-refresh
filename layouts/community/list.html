@@ -1,16 +1,5 @@
 {{ define "main" }}
 
-<div class="community-wrapper">
-  <div class="community-header">
-    <h1 class="community-title">Tekton Community</h1>
-    <p class="section-subtitle community-subtitle">
-      Join us in building the industry-standard, cloud-native CI/CD platform.
-    </p>
-  </div>
-
-  {{ with .Content }}<div class="community-description">{{ . }}</div>{{ end }}
-
-  {{ partial "community-links.html" . }}
-</div>
+{{ partial "community-links.html" . }}
 
 {{ end }}
