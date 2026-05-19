@@ -28,3 +28,4 @@ sync/.cache
 
 # MacOS folders
 **/.DS_Store
+.superpowers/

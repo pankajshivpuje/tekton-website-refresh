@@ -42,6 +42,18 @@
   color: #cbd5e1;
 }
 
+/* ---------- Nav bar GitHub badges ---------- */
+.github-badges {
+  display: none;
+  align-items: center;
+  gap: 0.25rem;
+}
+@media (min-width: 768px) {
+  .github-badges {
+    display: flex;
+  }
+}
+
 /* ---------- Global dark-mode link & code readability ---------- */
 :root.dark a {
   color: #93b4ff;

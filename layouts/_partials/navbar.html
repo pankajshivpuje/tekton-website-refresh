@@ -66,7 +66,7 @@
                 <span class="hx:sr-only">{{ or (T .Identifier) .Name | safeHTML }}</span>
               </a>
               {{- with site.Params.github_repo_for_badges -}}
-                <a class="github-badges hx:hidden hx:md:flex hx:items-center hx:gap-1" href="https://github.com/{{ . }}" target="_blank" rel="noreferrer" title="GitHub Stars & Forks">
+                <a class="github-badges" href="https://github.com/{{ . }}" target="_blank" rel="noreferrer" title="GitHub Stars & Forks">
                   <img src="https://img.shields.io/github/stars/{{ . }}?style=social" alt="GitHub stars" loading="lazy" height="20">
                   <img src="https://img.shields.io/github/forks/{{ . }}?style=social" alt="GitHub forks" loading="lazy" height="20">
                 </a>
