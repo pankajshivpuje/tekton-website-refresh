@@ -1,0 +1,16 @@
+<div class="page-hero">
+  <div class="page-hero-inner">
+    {{ with .eyebrow }}
+    <p class="page-hero-eyebrow">{{ . }}</p>
+    {{ end }}
+    <h1 class="page-hero-title">{{ .title }}</h1>
+    {{ with .subtitle }}
+    <p class="page-hero-subtitle">{{ . }}</p>
+    {{ end }}
+    {{ with .link }}
+    <a href="{{ .url }}" class="page-hero-link" {{ if .external }}target="_blank" rel="noreferrer"{{ end }}>
+      {{ .text }}
+    </a>
+    {{ end }}
+  </div>
+</div>

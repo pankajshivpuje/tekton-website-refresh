@@ -1,11 +1,8 @@
 {{ define "main" }}
 
-<div class="blog-page">
-  <div class="blog-header">
-    <h1 class="blog-heading">Blog</h1>
-    <p class="section-subtitle">News, releases, and technical deep-dives from the Tekton project.</p>
-  </div>
+{{ partial "page-hero.html" (dict "title" "Blog" "subtitle" "News, releases, and technical deep-dives from the Tekton project.") }}
 
+<div class="blog-page">
   {{ $posts := where .Site.RegularPages "Section" "blog" }}
   {{ if $posts }}
   <div class="latest-posts-grid">

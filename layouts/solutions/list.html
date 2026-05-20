@@ -1,14 +1,8 @@
 {{ define "main" }}
 
+{{ partial "page-hero.html" (dict "title" "Solutions" "eyebrow" "Use Cases" "subtitle" "Real-world patterns for using Tekton in production — from enterprise CI/CD to supply chain security.") }}
+
 <div class="solutions-page">
-  <div class="solutions-header">
-    <p class="comp-eyebrow">Use Cases</p>
-    <h1 class="solutions-heading">Solutions</h1>
-    <p class="section-subtitle">Real-world patterns for using Tekton in production — from enterprise CI/CD to supply chain security.</p>
-  </div>
-
-  <p class="solutions-intro">Tekton's modular architecture adapts to a wide range of use cases. These guides map components to real-world problems and show you how to get started.</p>
-
   <div class="solutions-grid">
     <a href="{{ relURL "solutions/enterprise-cicd/" }}" class="solutions-card">
       <div class="solutions-icon solutions-icon-blue">

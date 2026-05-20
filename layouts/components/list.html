@@ -1,12 +1,8 @@
 {{ define "main" }}
 
-<div class="comp-page">
-  <div class="comp-hero">
-    <p class="comp-eyebrow">Tekton Ecosystem</p>
-    <h1 class="comp-heading">Modular CI/CD for Kubernetes</h1>
-    <p class="section-subtitle">Pick the components you need. Each one works standalone or together as a full platform.</p>
-  </div>
+{{ partial "page-hero.html" (dict "title" "Modular CI/CD for Kubernetes" "eyebrow" "Tekton Ecosystem" "subtitle" "Pick the components you need. Each one works standalone or together as a full platform.") }}
 
+<div class="comp-page">
   <!-- Component cards -->
   <div class="comp-grid">
 

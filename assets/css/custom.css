@@ -714,28 +714,6 @@ pre {
   margin: 0 auto;
   padding: 2rem 1.5rem 0;
 }
-.solutions-header, .case-studies-header {
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-.solutions-heading, .case-studies-heading {
-  font-size: 2.25rem;
-  font-weight: 800;
-  margin: 0 0 0.5rem;
-  color: #0f172a;
-}
-:root.dark .solutions-heading,
-:root.dark .case-studies-heading { color: #f1f5f9; }
-.solutions-intro, .case-studies-intro {
-  max-width: 700px;
-  margin: 0 auto 2.5rem;
-  text-align: center;
-  font-size: 0.95rem;
-  line-height: 1.7;
-  color: #6b7280;
-}
-:root.dark .solutions-intro,
-:root.dark .case-studies-intro { color: #9ca3af; }
 .solutions-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -935,17 +913,6 @@ pre {
   margin: 0 auto;
   padding: 2rem 1.5rem 0;
 }
-.blog-header {
-  text-align: center;
-  margin-bottom: 2.5rem;
-}
-.blog-heading {
-  font-size: 2.25rem;
-  font-weight: 800;
-  margin: 0 0 0.5rem;
-  color: #0f172a;
-}
-:root.dark .blog-heading { color: #f1f5f9; }
 
 /* ---------- Version dropdown ---------- */
 .version-dropdown {
@@ -1031,26 +998,6 @@ pre {
   margin: 0 auto;
   padding: 2rem 1.5rem 0;
 }
-.comp-hero {
-  text-align: center;
-  margin-bottom: 2.5rem;
-}
-.comp-eyebrow {
-  font-size: 0.75rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: #1d4ed8;
-  margin: 0 0 0.5rem;
-}
-:root.dark .comp-eyebrow { color: #818cf8; }
-.comp-heading {
-  font-size: 2.25rem;
-  font-weight: 800;
-  margin: 0 0 0.5rem;
-  color: #0f172a;
-}
-:root.dark .comp-heading { color: #f1f5f9; }
 .comp-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1188,7 +1135,6 @@ pre {
 }
 @media (max-width: 540px) {
   .comp-grid { grid-template-columns: 1fr; }
-  .comp-heading { font-size: 1.75rem; }
   .comp-diagram { overflow-x: auto; }
   .comp-diagram-svg { min-width: 600px; }
 }
@@ -1216,37 +1162,48 @@ pre {
 /* ---------- Community page — section layout ---------- */
 
 /* Hero */
-.community-hero {
+
+/* ---------- Reusable page hero (same gradient as community) ---------- */
+.page-hero {
   background: linear-gradient(135deg, #00109F 0%, #4f46e5 50%, #7c3aed 100%);
   color: #fff;
   text-align: center;
   padding: 4rem 1.5rem;
 }
-.community-hero-inner {
+.page-hero-inner {
   max-width: 700px;
   margin: 0 auto;
 }
-.community-hero-title {
+.page-hero-eyebrow {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255,255,255,0.7);
+  margin: 0 0 0.5rem;
+}
+.page-hero-title {
   font-size: 2.5rem;
   font-weight: 800;
   margin: 0 0 0.75rem;
   color: #fff;
 }
-.community-hero-subtitle {
+.page-hero-subtitle {
   font-size: 1.15rem;
   color: rgba(255,255,255,0.85);
-  margin: 0 0 1.25rem;
+  margin: 0;
   line-height: 1.6;
 }
-.community-hero-coc {
+.page-hero-link {
   display: inline-block;
+  margin-top: 1.25rem;
   font-size: 0.85rem;
   color: rgba(255,255,255,0.7);
   text-decoration: underline;
   text-underline-offset: 3px;
   transition: color 0.15s;
 }
-.community-hero-coc:hover {
+.page-hero-link:hover {
   color: #fff;
 }
 
@@ -1481,20 +1438,20 @@ pre {
 
 /* Responsive */
 @media (max-width: 640px) {
-  .community-hero {
-    padding: 2.5rem 1rem;
-  }
-  .community-hero-title {
-    font-size: 1.75rem;
-  }
-  .community-hero-subtitle {
-    font-size: 1rem;
-  }
   .community-section {
     padding: 2rem 1rem;
   }
   .community-section-heading {
     font-size: 1.25rem;
+  }
+  .page-hero {
+    padding: 2.5rem 1rem;
+  }
+  .page-hero-title {
+    font-size: 1.75rem;
+  }
+  .page-hero-subtitle {
+    font-size: 1rem;
   }
 }
 

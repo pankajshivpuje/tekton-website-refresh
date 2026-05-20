@@ -1,14 +1,8 @@
 {{ define "main" }}
 
+{{ partial "page-hero.html" (dict "title" "Case Studies" "eyebrow" "Real-World Usage" "subtitle" "See how organizations use Tekton to build cloud-native CI/CD systems at scale.") }}
+
 <div class="case-studies-page">
-  <div class="case-studies-header">
-    <p class="comp-eyebrow">Real-World Usage</p>
-    <h1 class="case-studies-heading">Case Studies</h1>
-    <p class="section-subtitle">See how organizations use Tekton to build cloud-native CI/CD systems at scale.</p>
-  </div>
-
-  <p class="case-studies-intro">Learn how teams across the industry use Tekton to power their CI/CD workflows.</p>
-
   <div class="solutions-grid">
     <a href="{{ relURL "case-studies/openshift-pipelines/" }}" class="solutions-card">
       <div class="case-study-logo-wrap">

@@ -1,15 +1,5 @@
 <!-- Section 1: Hero -->
-<div class="community-hero">
-  <div class="community-hero-inner">
-    <h1 class="community-hero-title">Tekton Community</h1>
-    <p class="community-hero-subtitle">
-      Join us in building the industry-standard, cloud-native CI/CD platform.
-    </p>
-    <a href="https://github.com/tektoncd/community/blob/main/code-of-conduct.md" class="community-hero-coc" target="_blank" rel="noreferrer">
-      CNCF Code of Conduct
-    </a>
-  </div>
-</div>
+{{ partial "page-hero.html" (dict "title" "Tekton Community" "subtitle" "Join us in building the industry-standard, cloud-native CI/CD platform." "link" (dict "url" "https://github.com/tektoncd/community/blob/main/code-of-conduct.md" "text" "CNCF Code of Conduct" "external" true)) }}
 
 <!-- Section 2: Get Started -->
 <div class="community-section community-section-alt">
