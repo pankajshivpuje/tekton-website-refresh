@@ -1,0 +1,25 @@
+{{ define "main" }}
+
+{{ partial "page-hero.html" (dict "title" "Blog" "subtitle" "News, releases, and technical deep-dives from the Tekton project.") }}
+
+<div class="blog-page">
+  {{ $posts := where .Site.RegularPages "Section" "blog" }}
+  {{ if $posts }}
+  <div class="latest-posts-grid">
+    {{ range $posts }}
+    <a href="{{ .RelPermalink }}" class="latest-post-card">
+      <time class="latest-post-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+      <h3 class="latest-post-title">{{ .Title }}</h3>
+      {{ with .Params.description }}
+      <p class="latest-post-desc">{{ . | truncate 150 }}</p>
+      {{ else }}
+      <p class="latest-post-desc">{{ .Summary | plainify | truncate 150 }}</p>
+      {{ end }}
+      <span class="latest-post-link">Read more &rarr;</span>
+    </a>
+    {{ end }}
+  </div>
+  {{ end }}
+</div>
+
+{{ end }}

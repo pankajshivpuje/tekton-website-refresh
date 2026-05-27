@@ -1,0 +1,51 @@
+{{ define "main" }}
+
+{{ partial "page-hero.html" (dict "title" "Case Studies" "eyebrow" "Real-World Usage" "subtitle" "See how organizations use Tekton to build cloud-native CI/CD systems at scale.") }}
+
+<div class="case-studies-page">
+  <div class="solutions-grid">
+    <a href="{{ relURL "case-studies/openshift-pipelines/" }}" class="solutions-card">
+      <div class="case-study-logo-wrap">
+        <img src="{{ relURL "images/adopters/redhat.svg" }}" alt="Red Hat" class="case-study-logo" />
+      </div>
+      <h3 class="solutions-card-title">Red Hat OpenShift Pipelines</h3>
+      <p class="solutions-card-desc">Enterprise Kubernetes CI/CD built on Tekton — integrated with the OpenShift developer experience.</p>
+      <span class="solutions-card-link">Read case study &rarr;</span>
+    </a>
+
+    <a href="{{ relURL "case-studies/cloud-build/" }}" class="solutions-card">
+      <div class="case-study-logo-wrap">
+        <img src="{{ relURL "images/adopters/google.svg" }}" alt="Google" class="case-study-logo" />
+      </div>
+      <h3 class="solutions-card-title">Google Cloud Build</h3>
+      <p class="solutions-card-desc">Serverless CI/CD powered by Tekton — providing fast, secure builds at Google scale.</p>
+      <span class="solutions-card-link">Read case study &rarr;</span>
+    </a>
+
+    <a href="{{ relURL "case-studies/ibm-cloud/" }}" class="solutions-card">
+      <div class="case-study-logo-wrap">
+        <img src="{{ relURL "images/adopters/ibm.svg" }}" alt="IBM" class="case-study-logo" />
+      </div>
+      <h3 class="solutions-card-title">IBM Cloud Continuous Delivery</h3>
+      <p class="solutions-card-desc">Multi-tenant CI/CD service powered by Tekton — serving thousands of enterprise pipelines.</p>
+      <span class="solutions-card-link">Read case study &rarr;</span>
+    </a>
+
+    <a href="{{ relURL "case-studies/puppet-relay/" }}" class="solutions-card">
+      <div class="case-study-logo-wrap">
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+      </div>
+      <h3 class="solutions-card-title">Puppet Relay</h3>
+      <p class="solutions-card-desc">Event-driven automation platform built on Tekton — connecting cloud workflows and infrastructure events.</p>
+      <span class="solutions-card-link">Read case study &rarr;</span>
+    </a>
+  </div>
+
+  <div class="solutions-cta">
+    <p class="solutions-cta-text">Want to share your Tekton story?</p>
+    <a href="{{ relURL "community/" }}" class="hextra-hero-btn-primary">Join the Community</a>
+    <a href="https://github.com/tektoncd/website" class="hextra-hero-btn-alt">Contribute</a>
+  </div>
+</div>
+
+{{ end }}

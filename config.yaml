@@ -1,9 +1,10 @@
 baseURL: /
 title: Tekton
+minify:
+  minifyOutput: true
 enableRobotsTXT: true
 theme:
-  - github.com/google/docsy
-  - github.com/google/docsy/dependencies
+  - github.com/imfing/hextra
 enableGitInfo: true
 contentDir: content/en
 defaultContentLanguage: en
@@ -11,11 +12,6 @@ defaultContentLanguageInSubdir: false
 enableMissingTranslationPlaceholders: true
 disableKinds:
   - taxonomy
-  - taxonomyTerm
-pygmentsCodeFences: true
-pygmentsUseClasses: false
-pygmentsUseClassic: false
-pygmentsStyle: manni
 enableEmoji: true
 ignoreFiles:
   - vendor/.*
@@ -28,6 +24,8 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+  highlight:
+    noClasses: false
 imaging:
   resampleFilter: CatmullRom
   quality: 75
@@ -38,28 +36,48 @@ services:
 languages:
   en:
     title: Tekton
-    description: Cloud Native CI/CD
     languageName: English
     weight: 1
+    params:
+      description: Kubernetes Native CI/CD
+
 params:
-  version_menu: Releases
+  description: Kubernetes Native CI/CD
+  images:
+    - /images/tekton-og-share.png
   github_repo: https://github.com/tektoncd/website
-  gcs_engine_id: 013756393218025596041:6eajntqsa6c
-  ui:
-    sidebar_menu_compact: false
-    sidebar_menu_foldable: true
-    breadcrumb_disable: true
-    sidebar_search_disable: false
-    navbar_logo: true
-    footer_about_disable: false
-    feedback:
-      enable: true
-      yes:
-        Thanks! <a href="https://github.com/tektoncd/website/issues/new">Tell us
-        how we can further improve</a>.
-      no: Sorry about that. <a
-        href="https://github.com/tektoncd/website/issues/new">Tell us how we can
-        further improve</a>.
+  github_repo_for_badges: tektoncd/pipeline
+
+  navbar:
+    displayTitle: false
+    displayLogo: true
+    logo:
+      path: images/tekton-horizontal.svg
+      dark: images/tekton-horizontal-dark.svg
+      width: 140
+      height: 36
+
+  search:
+    enable: true
+    type: flexsearch
+    flexsearch:
+      index: content
+      tokenize: forward
+
+  editURL:
+    enable: true
+    base: https://github.com/tektoncd/website/edit/main/content
+
+  footer:
+    displayPoweredBy: false
+
+  theme:
+    default: system
+    displayToggle: false
+
+  page:
+    width: wide
+
   links:
     developer:
       - name: Slack
@@ -70,48 +88,50 @@ params:
         url: https://github.com/tektoncd
         icon: fab fa-github
         desc: GitHub organization for the Tekton project
-sectionPagesMenu: "docs"
+
 menu:
-  docs:
-    - name: "Getting Started"
-      url: "/docs/getting-started/"
+  main:
+    - identifier: Documentation
+      name: Documentation
+      pageRef: /docs
       weight: 1
-    - name: "Installation"
-      url: "/docs/installation/"
+    - identifier: Components
+      name: Components
+      pageRef: /components
       weight: 2
-    - name: "Concepts"
-      url: "/docs/concepts/"
+    - identifier: Solutions
+      name: Solutions
+      pageRef: /solutions
       weight: 3
-    - name: "How-to Guides"
-      url: "/docs/how-to-guides/"
+    - identifier: CaseStudies
+      name: Case Studies
+      pageRef: /case-studies
       weight: 4
-    - name: "Tasks and Pipelines"
-      url: "/docs/pipelines/"
+    - identifier: Blog
+      name: Blog
+      pageRef: /blog
       weight: 5
-    - name: "Pipelines-as-Code"
-      url: "/docs/pipelines-as-code/"
+    - identifier: Community
+      name: Community
+      pageRef: /community
       weight: 6
-    - name: "Triggers and EventListeners"
-      url: "/docs/triggers/"
+    - identifier: search
       weight: 7
-    - name: "Command-Line Interface"
-      url: "/docs/cli/"
+      params:
+        type: search
+    - identifier: GitHub
+      name: GitHub
+      url: https://github.com/tektoncd/pipeline
       weight: 8
-    - name: "Supply Chain Security"
-      url: "/docs/chains/"
+      params:
+        icon: github
+    - identifier: Slack
+      name: Slack
+      url: https://join.slack.com/t/tektoncd/shared_invite/zt-1z8ctzsyv-wLXWwA2Rl3AOhcNGqpWRUw
       weight: 9
-    - name: "Operator"
-      url: "/docs/operator/"
+      params:
+        icon: slack
+    - identifier: theme-toggle
       weight: 10
-    - name: "Dashboard"
-      url: "/docs/dashboard/"
-      weight: 11
-    - name: "Results"
-      url: "/docs/results/"
-      weight: 12
-    - name: "Pruner"
-      url: "/docs/pruner/"
-      weight: 13
-    - name: "Contribute"
-      url: "/docs/contribute/"
-      weight: 100 
+      params:
+        type: theme-toggle

@@ -1,7 +1,5 @@
 ---
 title: Blog
-menu:
-  main:
-    weight: 40
+description: "News, releases, and technical deep-dives from the Tekton project."
 ---
 

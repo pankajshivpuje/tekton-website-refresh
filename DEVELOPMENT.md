@@ -46,7 +46,7 @@ docker-compose rm
 Please use the **exact versions** specified here otherwise `npm start` will fail.
 
 - [python3](https://www.python.org/downloads/)
-- [hugo v0.107.0 (EXTENDED VERSION)](https://github.com/gohugoio/hugo/releases/v0.107.0)
+- [hugo v0.147.0 (EXTENDED VERSION)](https://github.com/gohugoio/hugo/releases/v0.147.0) — same version as `.github/workflows/deploy.yml`, `netlify.toml`, and the official `.deb` installed in `Dockerfile`
 - [pip](https://pip.pypa.io/en/stable/installing/)
 - [git 1.8.5 or later](https://github.com/git/git/releases)
 - [npm v10.9.2](https://nodejs.org/en/)

@@ -20,16 +20,7 @@ tkn_web_env
 **/.venv
 **/__pycache__/
 
-# Synced docs
-content/en/docs/Pipelines
-content/en/docs/Triggers
-content/en/docs/CLI
-content/en/vault/
-content/en/docs/Chains
-content/en/docs/Operator
-content/en/docs/Dashboard
-content/en/docs/Results
-content/en/docs/Pruner
+# Sync cache
 sync/.cache
 
 # Local Netlify folder
@@ -37,3 +28,4 @@ sync/.cache
 
 # MacOS folders
 **/.DS_Store
+.superpowers/

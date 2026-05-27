@@ -1,0 +1,23 @@
+{{ $chromaCSS := resources.Get "css/chroma.css" }}
+{{ if $chromaCSS }}
+{{ $chromaCSS = $chromaCSS | fingerprint }}
+<link rel="stylesheet" href="{{ $chromaCSS.RelPermalink }}" integrity="{{ $chromaCSS.Data.Integrity }}" crossorigin="anonymous">
+{{ end }}
+
+{{ $jsVerSwitcher := resources.Get "js/version-switcher.js" }}
+{{ if $jsVerSwitcher }}
+{{ $jsVerSwitcher = $jsVerSwitcher | fingerprint }}
+<script defer src="{{ $jsVerSwitcher.RelPermalink }}" integrity="{{ $jsVerSwitcher.Data.Integrity }}"></script>
+{{ end }}
+
+{{ $jsRelSwitcher := resources.Get "js/release-switcher.js" }}
+{{ if $jsRelSwitcher }}
+{{ $jsRelSwitcher = $jsRelSwitcher | fingerprint }}
+<script defer src="{{ $jsRelSwitcher.RelPermalink }}" integrity="{{ $jsRelSwitcher.Data.Integrity }}"></script>
+{{ end }}
+
+{{ $jsVerDropdown := resources.Get "js/version-dropdown.js" }}
+{{ if $jsVerDropdown }}
+{{ $jsVerDropdown = $jsVerDropdown | fingerprint }}
+<script defer src="{{ $jsVerDropdown.RelPermalink }}" integrity="{{ $jsVerDropdown.Data.Integrity }}"></script>
+{{ end }}

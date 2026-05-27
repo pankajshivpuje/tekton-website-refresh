@@ -1,4 +1,24 @@
+# Navigation menu items
+[Documentation]
+other = "Documentation"
 
+[Blog]
+other = "Blog"
+
+[Components]
+other = "Components"
+
+[Solutions]
+other = "Solutions"
+
+[CaseStudies]
+other = "Case Studies"
+
+[Community]
+other = "Community"
+
+[GitHub]
+other = "GitHub"
 
 # UI strings. Buttons and similar.
 

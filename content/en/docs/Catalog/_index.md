@@ -1,18 +1,19 @@
 ---
 title: "Catalog"
 linkTitle: "Catalog"
-weight: 7
+weight: 14
 description: >
   Reusable Task and Pipeline Resources
 ---
 
-{{% pageinfo %}}
-This document is a work in progress.
-{{% /pageinfo %}}
-
 ## Overview
 
-Tekton provides a number of **tasks**, **pipelines**, and **resources**
-that you can reuse in your own workflow.
+Tekton provides a number of **Tasks**, **Pipelines**, and **StepActions**
+that you can reuse in your own workflows.
 
-[The catalog is available on GitHub](https://github.com/tektoncd/catalog).
+Browse the catalog on [Artifact Hub](https://artifacthub.io/packages/search?kind=14&sort=relevance&page=1).
+
+The legacy [tektoncd/catalog](https://github.com/tektoncd/catalog) repository on GitHub has been archived.
+New resources are published directly to Artifact Hub. See the
+[Hub Resolver](/docs/pipelines/hub-resolver/) documentation for how to reference
+catalog resources in your pipelines.

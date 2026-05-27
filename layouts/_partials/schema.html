@@ -1,0 +1,16 @@
+{{/* Override Hugo internal schema — uses truncated page-description */}}
+
+<meta itemprop="name" content="{{ .Title }}">
+<meta itemprop="description" content="{{ partial "utils/page-description.html" . }}">
+
+{{ with .Date }}<meta itemprop="datePublished" content="{{ .Format "2006-01-02T15:04:05-07:00" | safeHTMLAttr }}">{{ end }}
+{{ with .Lastmod }}<meta itemprop="dateModified" content="{{ .Format "2006-01-02T15:04:05-07:00" | safeHTMLAttr }}">{{ end }}
+<meta itemprop="wordCount" content="{{ .WordCount }}">
+
+{{- with $.Params.images -}}
+{{ range first 6 . -}}<meta itemprop="image" content="{{ . | absURL }}">{{ end -}}
+{{- else -}}
+{{- with $.Site.Params.images -}}
+<meta itemprop="image" content="{{ index . 0 | absURL }}">
+{{- end -}}
+{{- end }}

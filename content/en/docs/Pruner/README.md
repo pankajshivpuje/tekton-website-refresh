@@ -1,0 +1,53 @@
+# Tekton Pruner Tutorials
+
+Welcome to the Tekton Pruner tutorials! These guides will help you understand and configure Tekton Pruner effectively for your Kubernetes cluster.
+
+## Tutorial Guides
+
+1. [Getting Started](/docs/pruner/getting-started/)
+   - Basic installation and configuration
+   - First steps with Tekton Pruner
+   - Simple example setup
+
+2. [History-based Pruning](/docs/pruner/history-based-pruning/)
+   - Understanding history limits
+   - Configuring successful and failed run retention
+   - Best practices for history-based cleanup
+
+3. [Time-based Pruning](/docs/pruner/time-based-pruning/)
+   - TTL-based resource cleanup
+   - Common TTL configurations
+   - Combining TTL with history limits
+
+4. [Namespace Configuration](/docs/pruner/namespace-configuration/)
+   - Namespace-specific settings
+   - Configuration inheritance
+   - Managing multiple environments
+
+5. [Resource Groups](/docs/pruner/resource-groups/)
+   - Grouping resources by labels and annotations
+   - Pipeline-specific configurations
+   - Advanced grouping strategies
+
+## Additional Documentation
+
+- [ConfigMap Validation](/docs/pruner/configmap-validation/)
+  - How the validation webhook works
+  - Required labels and naming conventions
+  - Common validation errors and solutions
+  - Deletion protection rules
+
+## Recommended Learning Path
+
+1. Start with the [Getting Started](/docs/pruner/getting-started/) tutorial to set up Tekton Pruner
+2. Learn about [Time-based Pruning](/docs/pruner/time-based-pruning/) for basic cleanup strategies
+3. Explore [History-based Pruning](/docs/pruner/history-based-pruning/) for more sophisticated retention policies
+4. Use [Namespace Configuration](/docs/pruner/namespace-configuration/) to manage different environments
+5. Master [Resource Groups](/docs/pruner/resource-groups/) for fine-grained control
+
+## Need Help?
+
+If you run into issues or need clarification:
+1. Check the [troubleshooting](/docs/pruner/troubleshooting/) guide
+2. Open an issue in our GitHub repository
+3. Join our community discussions

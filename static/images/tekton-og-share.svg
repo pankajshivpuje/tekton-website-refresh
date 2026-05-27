@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00109F"/>
+      <stop offset="100%" style="stop-color:#1a2fbf"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <text x="600" y="260" font-family="system-ui, -apple-system, sans-serif" font-size="72" font-weight="700" fill="#ffffff" text-anchor="middle">Tekton</text>
+  <text x="600" y="340" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="400" fill="rgba(255,255,255,0.85)" text-anchor="middle">Cloud Native CI/CD</text>
+  <text x="600" y="420" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="400" fill="rgba(255,255,255,0.6)" text-anchor="middle">A CNCF Incubating Project</text>
+  <rect x="540" y="370" width="120" height="2" rx="1" fill="rgba(185,128,208,0.6)"/>
+</svg>
