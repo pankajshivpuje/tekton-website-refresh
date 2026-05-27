@@ -1458,6 +1458,10 @@ pre {
 }
 
 /* ---------- Footer ---------- */
+.hextra-max-footer-width {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
 .tekton-footer {
   text-align: center;
   padding: 1.5rem 1rem 1rem;
