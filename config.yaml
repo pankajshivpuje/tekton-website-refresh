@@ -52,7 +52,7 @@ params:
     displayTitle: false
     displayLogo: true
     logo:
-      path: images/logo.svg
+      path: images/tekton-horizontal-color.png
       dark: images/tekton-horizontal-color.png
       width: 140
       height: 36
