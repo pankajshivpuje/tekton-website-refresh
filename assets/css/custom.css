@@ -134,7 +134,7 @@ nav.hextra-max-navbar-width > a:first-child {
 }
 nav.hextra-max-navbar-width > a:first-child img {
   height: 2.25rem !important;
-  width: auto !important;
+  width: 140px !important;
   object-fit: contain;
 }
 
@@ -918,6 +918,7 @@ pre {
 .version-dropdown {
   position: relative;
   display: inline-block;
+  flex-shrink: 0;
 }
 .version-dropdown-btn {
   background: none;
@@ -927,6 +928,7 @@ pre {
   font-size: 0.875rem;
   cursor: pointer;
   color: inherit;
+  white-space: nowrap;
 }
 .version-dropdown-btn:hover {
   background: var(--hextra-card-bg, #f9fafb);

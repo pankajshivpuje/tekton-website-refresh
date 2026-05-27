@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var wrapper = document.createElement('div');
   wrapper.className = 'version-dropdown';
   wrapper.style.marginLeft = '0.5rem';
+  wrapper.style.marginRight = '0.25rem';
 
   var btn = document.createElement('button');
   btn.className = 'version-dropdown-btn';
@@ -29,9 +30,9 @@ document.addEventListener('DOMContentLoaded', function() {
   wrapper.appendChild(btn);
   wrapper.appendChild(menu);
 
-  var themeToggle = nav.querySelector('.hextra-theme-toggle');
-  if (themeToggle) {
-    themeToggle.parentNode.insertBefore(wrapper, themeToggle);
+  var searchWrapper = nav.querySelector('.hextra-search-wrapper');
+  if (searchWrapper && searchWrapper.nextSibling) {
+    nav.insertBefore(wrapper, searchWrapper.nextSibling);
   } else {
     nav.appendChild(wrapper);
   }
