@@ -2,7 +2,8 @@ document.addEventListener('DOMContentLoaded', function() {
   var nav = document.querySelector('.hextra-nav-container nav');
   if (!nav) return;
 
-  var isDocsPage = window.location.pathname.startsWith('/docs/') || window.location.pathname.startsWith('/vault/');
+  var p = window.location.pathname;
+  var isDocsPage = p.indexOf('/docs/') !== -1 || p.indexOf('/vault/') !== -1;
   if (!isDocsPage) return;
 
   var wrapper = document.createElement('div');
