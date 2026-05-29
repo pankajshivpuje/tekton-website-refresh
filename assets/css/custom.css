@@ -447,6 +447,11 @@ nav.hextra-max-navbar-width > a:first-child img {
   text-align: center;
   margin: 0 auto var(--section-gap);
   max-width: 960px;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 2.5rem;
+}
+:root.dark .trusted-by {
+  border-top-color: #334155;
 }
 .trusted-by-label {
   font-size: 0.85rem;
