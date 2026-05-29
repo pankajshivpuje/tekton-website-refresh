@@ -67,7 +67,7 @@
               </a>
               {{- with site.Params.github_repo_for_badges -}}
                 <a class="github-badges" href="https://github.com/{{ . }}" target="_blank" rel="noreferrer" title="GitHub Stars">
-                  <img src="https://img.shields.io/github/stars/{{ . }}?style=social" alt="GitHub stars" loading="lazy" height="20">
+                  <img src="https://img.shields.io/github/stars/{{ . }}?style=social&cacheSeconds=86400" alt="GitHub stars" loading="lazy" height="20">
                 </a>
               {{- end -}}
             </div>
