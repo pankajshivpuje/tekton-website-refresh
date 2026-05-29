@@ -9,7 +9,7 @@
     {{ range $posts }}
     <a href="{{ .RelPermalink }}" class="latest-post-card">
       <time class="latest-post-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
-      <h3 class="latest-post-title">{{ .Title }}</h3>
+      <h2 class="latest-post-title">{{ .Title }}</h2>
       {{ with .Params.description }}
       <p class="latest-post-desc">{{ . | truncate 150 }}</p>
       {{ else }}

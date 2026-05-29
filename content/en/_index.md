@@ -108,6 +108,7 @@ description: "Tekton is a cloud-native, open-source framework for creating CI/CD
 </div>
 </div>
 
+<h2 class="sr-only">Quick Links</h2>
 <div class="quicklinks-grid">
   <a href='{{< relurl "docs/installation/" >}}' class="quicklinks-card">
     <h3 class="quicklinks-title">Install Tekton</h3>
