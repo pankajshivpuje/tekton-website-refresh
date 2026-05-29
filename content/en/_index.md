@@ -31,34 +31,34 @@ description: "Tekton is a cloud-native, open-source framework for creating CI/CD
     <div class="pipeline-flow">
       <div class="pipeline-task pipeline-task-source">
         <div class="pipeline-task-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
         </div>
         <span class="pipeline-task-name">Source</span>
       </div>
       <div class="pipeline-connector">
-        <svg width="32" height="12" viewBox="0 0 32 12"><path d="M0 6h24" stroke="currentColor" stroke-width="2" fill="none"/><path d="M22 1l6 5-6 5" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/></svg>
+        <svg aria-hidden="true" width="32" height="12" viewBox="0 0 32 12"><path d="M0 6h24" stroke="currentColor" stroke-width="2" fill="none"/><path d="M22 1l6 5-6 5" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/></svg>
       </div>
       <div class="pipeline-task pipeline-task-build">
         <div class="pipeline-task-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M12 12h.01"/><path d="M17 12h.01"/><path d="M7 12h.01"/></svg>
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M12 12h.01"/><path d="M17 12h.01"/><path d="M7 12h.01"/></svg>
         </div>
         <span class="pipeline-task-name">Build</span>
       </div>
       <div class="pipeline-connector">
-        <svg width="32" height="12" viewBox="0 0 32 12"><path d="M0 6h24" stroke="currentColor" stroke-width="2" fill="none"/><path d="M22 1l6 5-6 5" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/></svg>
+        <svg aria-hidden="true" width="32" height="12" viewBox="0 0 32 12"><path d="M0 6h24" stroke="currentColor" stroke-width="2" fill="none"/><path d="M22 1l6 5-6 5" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/></svg>
       </div>
       <div class="pipeline-task pipeline-task-test">
         <div class="pipeline-task-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
         </div>
         <span class="pipeline-task-name">Test</span>
       </div>
       <div class="pipeline-connector">
-        <svg width="32" height="12" viewBox="0 0 32 12"><path d="M0 6h24" stroke="currentColor" stroke-width="2" fill="none"/><path d="M22 1l6 5-6 5" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/></svg>
+        <svg aria-hidden="true" width="32" height="12" viewBox="0 0 32 12"><path d="M0 6h24" stroke="currentColor" stroke-width="2" fill="none"/><path d="M22 1l6 5-6 5" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/></svg>
       </div>
       <div class="pipeline-task pipeline-task-deploy">
         <div class="pipeline-task-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/><path d="M12 12v9"/><path d="m8 17 4 4 4-4"/></svg>
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/><path d="M12 12v9"/><path d="m8 17 4 4 4-4"/></svg>
         </div>
         <span class="pipeline-task-name">Deploy</span>
       </div>
