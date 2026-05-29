@@ -27,7 +27,6 @@
 }
 
 /* ---------- Keyboard focus ---------- */
-.why-tekton-card:focus-visible,
 .quicklinks-card:focus-visible,
 .hextra-hero-btn-primary:focus-visible,
 .hextra-hero-btn-alt:focus-visible,
@@ -36,7 +35,6 @@
   outline: 2px solid #3b82f6;
   outline-offset: 2px;
 }
-:root.dark .why-tekton-card:focus-visible,
 :root.dark .quicklinks-card:focus-visible,
 :root.dark .hextra-hero-btn-primary:focus-visible,
 :root.dark .hextra-hero-btn-alt:focus-visible,
@@ -356,13 +354,8 @@ nav.hextra-max-navbar-width > a:first-child img {
   padding: 1.5rem;
   text-decoration: none !important;
   color: inherit !important;
-  transition: box-shadow 0.2s, border-color 0.2s;
   display: flex;
   flex-direction: column;
-}
-.why-tekton-card:hover {
-  box-shadow: 0 4px 20px rgba(0,0,0,0.07);
-  border-color: #c7d2fe;
 }
 .why-tekton-icon-badge {
   width: 2.5rem;
@@ -415,10 +408,6 @@ nav.hextra-max-navbar-width > a:first-child img {
 :root.dark .why-tekton-card {
   background: #1e293b;
   border-color: #334155;
-}
-:root.dark .why-tekton-card:hover {
-  border-color: #6366f1;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.25);
 }
 :root.dark .why-tekton-card-title { color: #f1f5f9; }
 :root.dark .why-tekton-card-desc { color: #cbd5e1; }
