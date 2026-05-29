@@ -42,6 +42,19 @@
 :root.dark .cncf-banner-inner:focus-visible {
   outline-color: #818cf8;
 }
+.community-pill:focus-visible,
+.tekton-footer-links a:focus-visible,
+.version-dropdown-btn:focus-visible,
+.docs-landing-card:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+:root.dark .community-pill:focus-visible,
+:root.dark .tekton-footer-links a:focus-visible,
+:root.dark .version-dropdown-btn:focus-visible,
+:root.dark .docs-landing-card:focus-visible {
+  outline-color: #818cf8;
+}
 
 /* ---------- Section subtitle (replaces inline opacity) ---------- */
 .section-subtitle {
