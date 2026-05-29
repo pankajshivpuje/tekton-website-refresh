@@ -20,6 +20,9 @@ other = "Community"
 [GitHub]
 other = "GitHub"
 
+[Slack]
+other = "Slack"
+
 # UI strings. Buttons and similar.
 
 [ui_pager_prev]
