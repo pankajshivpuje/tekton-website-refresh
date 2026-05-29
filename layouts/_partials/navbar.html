@@ -66,9 +66,9 @@
                 <span class="hx:sr-only">{{ or (T .Identifier) .Name | safeHTML }}</span>
               </a>
               {{- with site.Params.github_repo_for_badges -}}
-                <a class="github-badges" href="https://github.com/{{ . }}" target="_blank" rel="noreferrer" title="GitHub Stars">
-                  <img src="https://img.shields.io/github/stars/{{ . }}?style=social&cacheSeconds=86400" alt="GitHub stars" loading="lazy" height="20">
-                </a>
+                <span class="github-badges">
+                  <iframe src="https://ghbtns.com/github-btn.html?user={{ index (split . "/") 0 }}&repo={{ index (split . "/") 1 }}&type=star&count=true" frameborder="0" scrolling="0" width="100" height="20" title="GitHub Stars"></iframe>
+                </span>
               {{- end -}}
             </div>
           {{- else -}}
