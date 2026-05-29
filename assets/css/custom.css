@@ -1500,6 +1500,18 @@ pre {
 :root.dark .tekton-footer-cncf {
   color: #6b7280;
 }
+.tekton-footer-legal {
+  font-size: 0.7rem;
+  color: #9ca3af;
+  margin: 0.5rem 0 0;
+}
+.tekton-footer-legal a {
+  color: inherit;
+  text-decoration: underline;
+}
+:root.dark .tekton-footer-legal {
+  color: #6b7280;
+}
 
 /* ---------- Quick Links row ---------- */
 .quicklinks-grid {
