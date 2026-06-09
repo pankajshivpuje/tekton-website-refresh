@@ -522,8 +522,8 @@ data:
 - [Build and push and image with Kaniko and Tekton][kaniko-build].
 - [Full Tasks and Pipelines documentation](/docs/pipelines/).
 
-[tekton-hub]: https://hub.tekton.dev/
-[git-clone]: https://hub.tekton.dev/tekton/task/git-clone
+[tekton-hub]: https://artifacthub.io/packages/search?kind=7&sort=relevance
+[git-clone]: https://artifacthub.io/packages/tekton-task/tekton-catalog-tasks/git-clone
 [workspaces]: /docs/pipelines/workspaces/
 [bundles]: /docs/pipelines/pipelines/#tekton-bundles
 [getting-started]: /docs/getting-started/

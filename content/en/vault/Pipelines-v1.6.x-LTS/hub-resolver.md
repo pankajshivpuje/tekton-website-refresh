@@ -45,10 +45,10 @@ for the name, namespace and defaults that the resolver ships with.
 
 ### Configuring the Hub API endpoint
 
-The Hub Resolver supports to resolve resources from the [Artifact Hub](https://artifacthub.io/) and the [Tekton Hub](https://hub.tekton.dev/),
+The Hub Resolver supports to resolve resources from the [Artifact Hub](https://artifacthub.io/) and the [Tekton Hub](https://artifacthub.io/packages/search?kind=7&sort=relevance),
 which can be configured by setting the `type` field of the resolver.
 
-** DEPRECATION NOTICE: [Tekton Hub](https://hub.tekton.dev/) is deprecated. Users should migrate to [Artifact Hub](https://artifacthub.io/) for discovering and managing Tekton resources. See the [migration guide](https://github.com/tektoncd/hub/issues/667) for more information.**
+** DEPRECATION NOTICE: [Tekton Hub](https://artifacthub.io/packages/search?kind=7&sort=relevance) is deprecated. Users should migrate to [Artifact Hub](https://artifacthub.io/) for discovering and managing Tekton resources. See the [migration guide](https://github.com/tektoncd/hub/issues/667) for more information.**
 
 When setting the `type` field to `artifact`, the resolver will hit the public hub api at https://artifacthub.io/ by default
 but you can configure your own (for example to use a private hub

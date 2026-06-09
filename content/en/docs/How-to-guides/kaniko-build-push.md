@@ -110,7 +110,7 @@ authentication][tekton-git-auth].
 
 [tekton-clone]: /docs/how-to-guides/clone-repository/ 
 [tekton-git-auth]: /docs/how-to-guides/clone-repository/#git-authentication
-[git-clone]: https://hub.tekton.dev/tekton/task/git-clone
+[git-clone]: https://artifacthub.io/packages/tekton-task/tekton-catalog-tasks/git-clone
 
 ## Build the container image with Kaniko
 
@@ -167,8 +167,8 @@ hub][tekton-hub].
 Check the [full code samples](#full-code-samples) to see how all the pieces fit
 together.
 
-[kaniko]: https://hub.tekton.dev/tekton/task/kaniko
-[tekton-hub]: https://hub.tekton.dev/
+[kaniko]: https://artifacthub.io/packages/tekton-task/tekton-catalog-tasks/kaniko
+[tekton-hub]: https://artifacthub.io/packages/search?kind=7&sort=relevance
 [local-registry]: https://gist.github.com/trisberg/37c97b6cc53def9a3e38be6143786589 
 
 ### Container registry authentication
