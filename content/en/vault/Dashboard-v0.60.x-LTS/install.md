@@ -220,7 +220,7 @@ kubectl delete rolebinding -l rbac.dashboard.tekton.dev/subject=tekton-dashboard
 ```
 
 If you're using one of these proxies to provide authentication but still want to use the Dashboard's ServiceAccount to access the Kubernetes APIs you may need to modify the proxy config to prevent it from sending the `Authorization` header on upstream requests to the Dashboard. Some examples of relevant config:
-- oauth2-proxy: add the `--pass-authorization-header=false` command line argument or its equivalent to your config https://oauth2-proxy.github.io/oauth2-proxy/docs/configuration/overview#command-line-options
+- oauth2-proxy: add the `--pass-authorization-header=false` command line argument or its equivalent to your config https://oauth2-proxy.github.io/oauth2-proxy/configuration/overview#command-line-options
 - Istio EnvoyFilter: the external authentication service should return a custom header `x-envoy-auth-headers-to-remove: Authorization` https://www.envoyproxy.io/docs/envoy/latest/api-v3/service/auth/v3/external_auth.proto
 - Traefik: `removeHeader: true` https://doc.traefik.io/traefik/v2.0/middlewares/basicauth/#removeheader
 
