@@ -4,7 +4,7 @@ weight: 700
 ---
 # Events in Tekton Triggers
 
-Triggers event controller emits [Kubernetes events](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.18/#event-v1-core)
+Triggers event controller emits [Kubernetes events](https://kubernetes.io/docs/reference/kubernetes-api/cluster-resources/event-v1/)
 when EventListener get request to process `Triggers`. This allows you to monitor and react to what's happening during execution by
 retrieving those events using the `kubectl get events` command.
 

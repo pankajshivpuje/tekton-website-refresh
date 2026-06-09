@@ -65,7 +65,7 @@ string
 <td>
 <code>metadata</code><br/>
 <em>
-<a href="https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.22/#objectmeta-v1-meta">
+<a href="https://kubernetes.io/docs/reference/kubernetes-api/common-definitions/object-meta/">
 Kubernetes meta/v1.ObjectMeta
 </a>
 </em>
@@ -156,7 +156,7 @@ string
 <td>
 <code>metadata</code><br/>
 <em>
-<a href="https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.22/#objectmeta-v1-meta">
+<a href="https://kubernetes.io/docs/reference/kubernetes-api/common-definitions/object-meta/">
 Kubernetes meta/v1.ObjectMeta
 </a>
 </em>
@@ -220,7 +220,7 @@ NamespaceSelector
 <td>
 <code>labelSelector</code><br/>
 <em>
-<a href="https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.22/#labelselector-v1-meta">
+<a href="https://kubernetes.io/docs/reference/kubernetes-api/common-definitions/label-selector/">
 Kubernetes meta/v1.LabelSelector
 </a>
 </em>
@@ -294,7 +294,7 @@ string
 <td>
 <code>metadata</code><br/>
 <em>
-<a href="https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.22/#objectmeta-v1-meta">
+<a href="https://kubernetes.io/docs/reference/kubernetes-api/common-definitions/object-meta/">
 Kubernetes meta/v1.ObjectMeta
 </a>
 </em>
@@ -422,7 +422,7 @@ string
 <td>
 <code>metadata</code><br/>
 <em>
-<a href="https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.22/#objectmeta-v1-meta">
+<a href="https://kubernetes.io/docs/reference/kubernetes-api/common-definitions/object-meta/">
 Kubernetes meta/v1.ObjectMeta
 </a>
 </em>
@@ -513,7 +513,7 @@ string
 <td>
 <code>metadata</code><br/>
 <em>
-<a href="https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.22/#objectmeta-v1-meta">
+<a href="https://kubernetes.io/docs/reference/kubernetes-api/common-definitions/object-meta/">
 Kubernetes meta/v1.ObjectMeta
 </a>
 </em>
@@ -775,7 +775,7 @@ the Validating/MutatingWebhookConfiguration types for configuring AdmissionWebho
 <td>
 <code>metadata</code><br/>
 <em>
-<a href="https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.22/#objectmeta-v1-meta">
+<a href="https://kubernetes.io/docs/reference/kubernetes-api/common-definitions/object-meta/">
 Kubernetes meta/v1.ObjectMeta
 </a>
 </em>
@@ -1040,7 +1040,7 @@ NamespaceSelector
 <td>
 <code>labelSelector</code><br/>
 <em>
-<a href="https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.22/#labelselector-v1-meta">
+<a href="https://kubernetes.io/docs/reference/kubernetes-api/common-definitions/label-selector/">
 Kubernetes meta/v1.LabelSelector
 </a>
 </em>
@@ -1327,7 +1327,7 @@ the Validating/MutatingWebhookConfiguration types for configuring AdmissionWebho
 <td>
 <code>metadata</code><br/>
 <em>
-<a href="https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.22/#objectmeta-v1-meta">
+<a href="https://kubernetes.io/docs/reference/kubernetes-api/common-definitions/object-meta/">
 Kubernetes meta/v1.ObjectMeta
 </a>
 </em>
@@ -1735,7 +1735,7 @@ int32
 <td>
 <code>serviceType</code><br/>
 <em>
-<a href="https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.22/#servicetype-v1-core">
+<a href="https://kubernetes.io/docs/reference/kubernetes-api/service-resources/service-v1/">
 Kubernetes core/v1.ServiceType
 </a>
 </em>
@@ -2656,7 +2656,7 @@ TriggerTemplateSpec
 <td>
 <code>objectRef</code><br/>
 <em>
-<a href="https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.22/#objectreference-v1-core">
+<a href="https://kubernetes.io/docs/reference/kubernetes-api/common-definitions/object-reference/">
 Kubernetes core/v1.ObjectReference
 </a>
 </em>
@@ -2750,7 +2750,7 @@ string
 <td>
 <code>metadata</code><br/>
 <em>
-<a href="https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.22/#objectmeta-v1-meta">
+<a href="https://kubernetes.io/docs/reference/kubernetes-api/common-definitions/object-meta/">
 Kubernetes meta/v1.ObjectMeta
 </a>
 </em>
@@ -2841,7 +2841,7 @@ string
 <td>
 <code>metadata</code><br/>
 <em>
-<a href="https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.22/#objectmeta-v1-meta">
+<a href="https://kubernetes.io/docs/reference/kubernetes-api/common-definitions/object-meta/">
 Kubernetes meta/v1.ObjectMeta
 </a>
 </em>
@@ -2918,7 +2918,7 @@ NamespaceSelector
 <td>
 <code>labelSelector</code><br/>
 <em>
-<a href="https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.22/#labelselector-v1-meta">
+<a href="https://kubernetes.io/docs/reference/kubernetes-api/common-definitions/label-selector/">
 Kubernetes meta/v1.LabelSelector
 </a>
 </em>
@@ -3002,7 +3002,7 @@ string
 <td>
 <code>metadata</code><br/>
 <em>
-<a href="https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.22/#objectmeta-v1-meta">
+<a href="https://kubernetes.io/docs/reference/kubernetes-api/common-definitions/object-meta/">
 Kubernetes meta/v1.ObjectMeta
 </a>
 </em>
@@ -3130,7 +3130,7 @@ string
 <td>
 <code>metadata</code><br/>
 <em>
-<a href="https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.22/#objectmeta-v1-meta">
+<a href="https://kubernetes.io/docs/reference/kubernetes-api/common-definitions/object-meta/">
 Kubernetes meta/v1.ObjectMeta
 </a>
 </em>
@@ -3221,7 +3221,7 @@ string
 <td>
 <code>metadata</code><br/>
 <em>
-<a href="https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.22/#objectmeta-v1-meta">
+<a href="https://kubernetes.io/docs/reference/kubernetes-api/common-definitions/object-meta/">
 Kubernetes meta/v1.ObjectMeta
 </a>
 </em>
@@ -3434,7 +3434,7 @@ NamespaceSelector
 <td>
 <code>labelSelector</code><br/>
 <em>
-<a href="https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.22/#labelselector-v1-meta">
+<a href="https://kubernetes.io/docs/reference/kubernetes-api/common-definitions/label-selector/">
 Kubernetes meta/v1.LabelSelector
 </a>
 </em>
@@ -3716,7 +3716,7 @@ NamespaceSelector
 <td>
 <code>labelSelector</code><br/>
 <em>
-<a href="https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.22/#labelselector-v1-meta">
+<a href="https://kubernetes.io/docs/reference/kubernetes-api/common-definitions/label-selector/">
 Kubernetes meta/v1.LabelSelector
 </a>
 </em>
@@ -4001,7 +4001,7 @@ int32
 <td>
 <code>serviceType</code><br/>
 <em>
-<a href="https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.22/#servicetype-v1-core">
+<a href="https://kubernetes.io/docs/reference/kubernetes-api/service-resources/service-v1/">
 Kubernetes core/v1.ServiceType
 </a>
 </em>
@@ -4826,7 +4826,7 @@ TriggerTemplateSpec
 <td>
 <code>objectRef</code><br/>
 <em>
-<a href="https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.22/#objectreference-v1-core">
+<a href="https://kubernetes.io/docs/reference/kubernetes-api/common-definitions/object-reference/">
 Kubernetes core/v1.ObjectReference
 </a>
 </em>
