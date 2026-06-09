@@ -140,7 +140,7 @@ pipelinesascode.tekton.dev/task: "artifact://buildah"
 
 > **Note:** Pipelines-as-Code will not try to fallback to the default or another custom hub if the task referenced is not found (the Pull Request will be set as failed).
 
-For more details, see the [Pipelines-as-Code Remote Hub Catalogs documentation](https://pipelinesascode.com/docs/install/settings/#remote-hub-catalogs).
+For more details, see the [Pipelines-as-Code Remote Hub Catalogs documentation](https://pipelinesascode.com/docs/api/settings/#remote-hub-catalogs).
 
 #### Additional Pipelines As Code Controller (Optional)
 
@@ -173,7 +173,7 @@ pipelinesAsCode:
    value then operator will add controllerName + `-pipelines-as-code-secret` as default value to be added to deployment env.
 
 - `settings` is optional and used to set the settings in the configMap of additional PAC Controller. For the fields whose
-   are not provided, default value will be used. You can check them [here](https://pipelinesascode.com/docs/install/settings/#pipelines-as-code-configuration-settings). 
+   are not provided, default value will be used. You can check them [here](https://pipelinesascode.com/docs/api/settings/#pipelines-as-code-configuration-settings). 
    Also, if configmap name is provided as `pipelines-as-code` then these settings will not be taken.
 
 > **NOTE:** Users can deploy multiple additional PAC Controller by providing multiple entries in `additionalPACControllers` field.
@@ -192,4 +192,4 @@ pipelinesAsCode:
 ```
 
 [PipelinesAsCode]:https://github.com/tektoncd/pipelines-as-code
-[pac-config]:https://pipelinesascode.com/docs/install/settings/#pipelines-as-code-configuration-settings
+[pac-config]:https://pipelinesascode.com/docs/api/settings/#pipelines-as-code-configuration-settings

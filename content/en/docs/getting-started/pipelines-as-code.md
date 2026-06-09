@@ -44,7 +44,7 @@ For the full walkthrough, see the
 ## Learn More
 
 {{< cards >}}
-  {{< card link="https://pipelinesascode.com/docs/guide/" title="Authoring Guide" icon="book-open" subtitle="Learn how to author and structure your pipeline definitions." >}}
-  {{< card link="https://pipelinesascode.com/docs/guide/gitops_commands/" title="GitOps Commands" icon="terminal" subtitle="Control pipeline runs directly from PR comments." >}}
-  {{< card link="https://pipelinesascode.com/docs/guide/resolver/" title="Task Resolution" icon="search" subtitle="Automatic resolution from local files, Artifact Hub, and remote URLs." >}}
+  {{< card link="https://pipelinesascode.com/docs/guides/" title="Authoring Guide" icon="book-open" subtitle="Learn how to author and structure your pipeline definitions." >}}
+  {{< card link="https://pipelinesascode.com/docs/guides/gitops-commands/" title="GitOps Commands" icon="terminal" subtitle="Control pipeline runs directly from PR comments." >}}
+  {{< card link="https://pipelinesascode.com/docs/guides/pipeline-resolution/" title="Task Resolution" icon="search" subtitle="Automatic resolution from local files, Artifact Hub, and remote URLs." >}}
 {{< /cards >}}

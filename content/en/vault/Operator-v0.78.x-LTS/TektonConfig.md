@@ -525,7 +525,7 @@ In the deployment the environment name will be converted as follows,
 The PipelinesAsCode section allows you to customize the Pipelines as Code features. When you change the TektonConfig CR, the Operator automatically applies the settings to custom resources and configmaps in your installation.
 
 Some of the fields have default values, so operator will add them if the user hasn't passed in CR. Other fields which
-don't have default values unless the user specifies them. User can find those [here](https://pipelinesascode.com/docs/install/settings/#pipelines-as-code-configuration-settings).
+don't have default values unless the user specifies them. User can find those [here](https://pipelinesascode.com/docs/api/settings/#pipelines-as-code-configuration-settings).
 
 Example:
 
@@ -624,7 +624,7 @@ pipelinesascode.tekton.dev/task: "artifact://buildah"
 
 > **Note:** Pipelines-as-Code will not try to fallback to the default or another custom hub if the task referenced is not found (the Pull Request will be set as failed).
 
-For more details, see the [Pipelines-as-Code Remote Hub Catalogs documentation](https://pipelinesascode.com/docs/install/settings/#remote-hub-catalogs).
+For more details, see the [Pipelines-as-Code Remote Hub Catalogs documentation](https://pipelinesascode.com/docs/api/settings/#remote-hub-catalogs).
 
 **NOTE**: OpenShiftPipelinesAsCode is currently available for the OpenShift Platform only.
 
