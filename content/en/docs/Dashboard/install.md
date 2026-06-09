@@ -211,7 +211,7 @@ You can then access the Dashboard UI at `http(s)://domain.tld/tekton/`
 
 The Dashboard does not provide its own authentication or authorization, however it will pass on any authentication headers provided to it by a proxy deployed in front of the Dashboard. These are then handled by the Kubernetes API server allowing for full access control via [Kubernetes RBAC](https://kubernetes.io/docs/reference/access-authn-authz/rbac/). In case of forbidden access the Dashboard will display corresponding error notifications.
 
-See the walk-throughs for an example of [enabling authentication using oauth2-proxy](./walkthrough/walkthrough-oauth2-proxy.md).
+See the walk-throughs for an example of [enabling authentication using oauth2-proxy](https://github.com/tektoncd/dashboard/blob/main/docs/walkthrough/walkthrough-oauth2-proxy.md).
 
 By default the Dashboard accesses resources and performs actions in the cluster using the permissions granted to its own ServiceAccount (i.e. the `tekton-dashboard` ServiceAccount in the `tekton-pipelines` namespace). If you wish to have the Dashboard perform actions on behalf of the authenticated user or some other ServiceAccount this can be achieved via [user impersonation](https://kubernetes.io/docs/reference/access-authn-authz/authentication/#user-impersonation). This is known to work with a number of popular solutions including oauth2-proxy, Keycloak, OpenUnison, Traefik, Istio's EnvoyFilter, and more.
 
@@ -242,9 +242,9 @@ The above command assumes that the current latest version was installed, refer t
 
 ## Next steps
 
-To get started with Tekton Dashboard, see the [tutorial](./tutorial.md).
+To get started with Tekton Dashboard, see the [tutorial](../tutorial/).
 
-To add more functionality to your Tekton Dashboard, see the [Tekton Dashboard extensions](./extensions.md)
+To add more functionality to your Tekton Dashboard, see the [Tekton Dashboard extensions](../extensions/)
 
 ---
 
