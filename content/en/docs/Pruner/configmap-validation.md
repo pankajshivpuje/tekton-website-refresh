@@ -260,6 +260,6 @@ To temporarily bypass validation:
 
 ## Related Documentation
 
-- [Getting Started](tutorials/getting-started.md) - Basic configuration setup
-- [Namespace Configuration](tutorials/namespace-configuration.md) - Namespace-level config details
-- [Troubleshooting](troubleshooting.md) - General troubleshooting guide
+- [Getting Started](../getting-started/) - Basic configuration setup
+- [Namespace Configuration](../namespace-configuration/) - Namespace-level config details
+- [Troubleshooting](../troubleshooting/) - General troubleshooting guide

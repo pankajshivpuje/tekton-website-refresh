@@ -63,7 +63,7 @@ Tekton automatically adds labels to Tekton entities as described in the followin
 		</tr>
 		<tr>
 			<td><code>tekton.dev/task</code></td>
-			<td><code>TaskRuns</code> that <a href="taskruns.md#specifying-the-target-task">reference an existing </code>Task</code></a>.</td>
+			<td><code>TaskRuns</code> that <a href="../taskruns/#specifying-the-target-task">reference an existing </code>Task</code></a>.</td>
 			<td><code>Pods</code></td>
 			<td>Name of the <code>Task</code> that the <code>TaskRun</code> references.</td>
 		</tr>

@@ -109,8 +109,8 @@ kubectl get pipelineruns -w
 
 ## Next Steps
 
-- **[Namespace Configuration](./namespace-configuration.md)** - Per-namespace settings and validation boundaries
-- **[Resource Groups](./resource-groups.md)** - Fine-grained control with selectors
-- **[Time-based Pruning](./time-based-pruning.md)** - TTL strategies for different environments
-- **[History-based Pruning](./history-based-pruning.md)** - Retention strategies by status
+- **[Namespace Configuration](../namespace-configuration/)** - Per-namespace settings and validation boundaries
+- **[Resource Groups](../resource-groups/)** - Fine-grained control with selectors
+- **[Time-based Pruning](../time-based-pruning/)** - TTL strategies for different environments
+- **[History-based Pruning](../history-based-pruning/)** - Retention strategies by status
 

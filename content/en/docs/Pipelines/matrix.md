@@ -1006,4 +1006,4 @@ status:
 [pr-with-matrix-and-results]: https://github.com/tektoncd/pipeline/blob/main/examples/v1/pipelineruns/beta/pipelinerun-with-matrix-and-results.yaml
 [pr-with-matrix-context-variables]: https://github.com/tektoncd/pipeline/blob/main/examples/v1/pipelineruns/beta/pipelinerun-with-matrix-context-variables.yaml
 [pr-with-matrix-emitting-results]: https://github.com/tektoncd/pipeline/blob/main/examples/v1/pipelineruns/beta/pipelinerun-with-matrix-emitting-results.yaml
-[retries]: pipelines.md#using-the-retries-field
+[retries]: ../pipelines/#using-the-retries-field
