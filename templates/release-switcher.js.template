@@ -4,8 +4,11 @@ if (typeof componentVersions === 'undefined') {
 
 const getComponentReleases = () => {
   const pathName = window.location.pathname;
-  const componentVersionStr = pathName.split("/")[2];
-  const componentRawName = componentVersionStr.split("-")[0];
+  const vaultIdx = pathName.indexOf('/vault/');
+  if (vaultIdx === -1) return {};
+  const afterVault = pathName.substring(vaultIdx + 7);
+  const componentVersionStr = afterVault.split('/')[0];
+  const componentRawName = componentVersionStr.split('-')[0];
   let latestVersion;
   let nightlyVersion;
   let latestLTS;
@@ -35,6 +38,7 @@ const getComponentReleases = () => {
 };
 
 const findReleases = () => {
+  const prefix = typeof getBasePrefix === 'function' ? getBasePrefix() : '';
   const componentReleases = getComponentReleases();
 
   const releasesNode = document.getElementById('release-switcher');
@@ -45,8 +49,8 @@ const findReleases = () => {
   const ltsNode = document.getElementById('lts-release-link');
 
   if (componentReleases.name) {
-    let nightlyURL = `/vault/${componentReleases.name}-${componentReleases.nightly}`;
-    let ltsURL = `/vault/${componentReleases.name}-${componentReleases.lts}`;
+    let nightlyURL = `${prefix}/vault/${componentReleases.name}-${componentReleases.nightly}`;
+    let ltsURL = `${prefix}/vault/${componentReleases.name}-${componentReleases.lts}`;
     releasesNode.style.visibility = 'visible';
     latestNode.innerText = `Documentation for ${componentReleases.name}-${componentReleases.latest}`;
     if (componentReleases.nightly) {

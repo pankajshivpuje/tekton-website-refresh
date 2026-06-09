@@ -1,5 +1,13 @@
 const componentVersions = JSON.parse('{{ component_versions_json }}');
 
+function getBasePrefix () {
+  var p = window.location.pathname;
+  var idx = p.indexOf('/docs/');
+  if (idx === -1) idx = p.indexOf('/vault/');
+  if (idx > 0) return p.substring(0, idx);
+  return '';
+}
+
 function expandOrCollapseSubMenu (componentName) {
   const childRef = `${componentName}-child`;
   const childNodes = document.querySelectorAll(`[data-ref="${childRef}"]`);
@@ -9,6 +17,7 @@ function expandOrCollapseSubMenu (componentName) {
 }
 
 function createLatestVersionNode (anchorNode, componentName, version, disabled, visible) {
+  const prefix = getBasePrefix();
   const latestVersionNode = document.createElement('a');
   latestVersionNode.style.paddingLeft = '2em';
   latestVersionNode.style.color = 'rgb(55, 114, 255)';
@@ -17,12 +26,12 @@ function createLatestVersionNode (anchorNode, componentName, version, disabled, 
     latestVersionNode.innerHTML = `${componentName}: ${version}`;
 } else if (visible) {
     latestVersionNode.className = 'dropdown-item';
-    latestVersionNode.setAttribute('href', `/docs/${componentName.toLowerCase()}`);
+    latestVersionNode.setAttribute('href', `${prefix}/docs/${componentName.toLowerCase()}`);
     latestVersionNode.setAttribute('data-ref', `${componentName}-child`.toLowerCase());
     latestVersionNode.innerHTML = `Latest (${version})`;
   } else {
     latestVersionNode.className = 'dropdown-item d-none';
-    latestVersionNode.setAttribute('href', `/docs/${componentName.toLowerCase()}`);
+    latestVersionNode.setAttribute('href', `${prefix}/docs/${componentName.toLowerCase()}`);
     latestVersionNode.setAttribute('data-ref', `${componentName}-child`.toLowerCase());
     latestVersionNode.innerHTML = `Latest (${version})`;
   }
@@ -41,6 +50,7 @@ function createArchivedVersionsNode (anchorNode, componentName, href) {
 }
 
 function createPreviousVersionsNodes (anchorNode, componentName, previousVersions, excludedVersion) {
+  const prefix = getBasePrefix();
   previousVersions.slice().forEach(function (bundle) {
     const previousVersion = bundle.displayName;
     if (excludedVersion !== null && excludedVersion === previousVersion) {
@@ -55,7 +65,7 @@ function createPreviousVersionsNodes (anchorNode, componentName, previousVersion
     }
     previousVersionNode.style.paddingLeft = '2em';
     previousVersionNode.style.color = 'rgb(55, 114, 255)';
-    previousVersionNode.setAttribute('href', `/vault/${componentName.toLowerCase()}-${previousVersion.toLowerCase().replace(' ', '-')}`);
+    previousVersionNode.setAttribute('href', `${prefix}/vault/${componentName.toLowerCase()}-${previousVersion.toLowerCase().replace(' ', '-')}`);
     previousVersionNode.setAttribute('data-ref', `${componentName}-child`.toLowerCase());
     previousVersionNode.innerHTML = `${previousVersion}`;
     anchorNode.appendChild(previousVersionNode);
@@ -94,7 +104,10 @@ function setMainVersionSwitcher () {
 
 function setVaultVersionSwitcher () {
   const pathName = window.location.pathname;
-  const componentVersionStr = pathName.split('/')[2];
+  const vaultIdx = pathName.indexOf('/vault/');
+  if (vaultIdx === -1) return;
+  const afterVault = pathName.substring(vaultIdx + 7);
+  const componentVersionStr = afterVault.split('/')[0];
   const componentRawName = componentVersionStr.split('-')[0];
   const versionRawName = componentVersionStr.split('-')[1];
   let componentName;
@@ -111,11 +124,17 @@ function setVaultVersionSwitcher () {
     }
   });
 
+  if (!componentName) return;
+
   const currentLocationAnnouncerNode = document.getElementById('current-location-announcer');
-  currentLocationAnnouncerNode.innerHTML = `${componentName} ${versionName}`;
+  if (currentLocationAnnouncerNode) {
+    currentLocationAnnouncerNode.innerHTML = `${componentName} ${versionName || ''}`;
+  }
 
   const currentLocationAnnouncerTextNode = document.getElementById('current-location-announcer-text');
-  currentLocationAnnouncerTextNode.innerHTML = `Tekton ${componentName} ${versionName}`;
+  if (currentLocationAnnouncerTextNode) {
+    currentLocationAnnouncerTextNode.innerHTML = `You are viewing the documentation of Tekton ${componentName} ${versionName || ''}`;
+  }
 
   const otherVersionsFormNode = document.getElementById('other-versions-form');
   const otherComponentsFormNode = document.getElementById('other-components-form');

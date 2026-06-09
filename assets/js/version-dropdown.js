@@ -3,8 +3,9 @@ document.addEventListener('DOMContentLoaded', function() {
   if (!nav) return;
 
   var p = window.location.pathname;
-  var isDocsPage = p.indexOf('/docs/') !== -1 || p.indexOf('/vault/') !== -1;
-  if (!isDocsPage) return;
+  var isDocsPage = p.indexOf('/docs/') !== -1;
+  var isVaultPage = p.indexOf('/vault/') !== -1;
+  if (!isDocsPage && !isVaultPage) return;
 
   var wrapper = document.createElement('div');
   wrapper.className = 'version-dropdown';
@@ -13,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
   var btn = document.createElement('button');
   btn.className = 'version-dropdown-btn';
-  btn.textContent = 'Versions ▾';
   btn.setAttribute('aria-haspopup', 'true');
   btn.setAttribute('aria-expanded', 'false');
 
@@ -21,12 +21,26 @@ document.addEventListener('DOMContentLoaded', function() {
   menu.className = 'version-dropdown-content';
   menu.setAttribute('role', 'menu');
   menu.setAttribute('aria-label', 'Version selector');
-  menu.innerHTML =
-    '<div class="vd-label" style="pointer-events:none; opacity:0.7;" role="presentation">Latest component versions:</div>' +
-    '<div id="version-announcer" role="group" aria-label="Latest versions"></div>' +
-    '<div class="vd-divider" role="separator"></div>' +
-    '<div class="vd-label" style="pointer-events:none;" role="presentation">Other Versions</div>' +
-    '<div id="previous-releases-form" role="group" aria-label="Previous releases"></div>';
+
+  if (isVaultPage) {
+    btn.innerHTML = '<span id="current-location-announcer">Version</span> ▾';
+    menu.innerHTML =
+      '<div class="vd-label" id="current-location-announcer-text" style="pointer-events:none; opacity:0.7; font-style:italic;" role="presentation"></div>' +
+      '<div class="vd-divider" role="separator"></div>' +
+      '<div class="vd-label" style="pointer-events:none;" role="presentation">Other Versions</div>' +
+      '<div id="other-versions-form" role="group" aria-label="Other versions"></div>' +
+      '<div class="vd-divider" role="separator"></div>' +
+      '<div class="vd-label" style="pointer-events:none;" role="presentation">Other Tekton Components</div>' +
+      '<div id="other-components-form" role="group" aria-label="Other components"></div>';
+  } else {
+    btn.textContent = 'Versions ▾';
+    menu.innerHTML =
+      '<div class="vd-label" style="pointer-events:none; opacity:0.7;" role="presentation">Latest component versions:</div>' +
+      '<div id="version-announcer" role="group" aria-label="Latest versions"></div>' +
+      '<div class="vd-divider" role="separator"></div>' +
+      '<div class="vd-label" style="pointer-events:none;" role="presentation">Other Versions</div>' +
+      '<div id="previous-releases-form" role="group" aria-label="Previous releases"></div>';
+  }
 
   wrapper.appendChild(btn);
   wrapper.appendChild(menu);
@@ -44,7 +58,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }).observe(menu, { childList: true, subtree: true });
 
-  if (typeof setMainVersionSwitcher === 'function') {
+  if (isVaultPage && typeof setVaultVersionSwitcher === 'function') {
+    setVaultVersionSwitcher();
+  } else if (typeof setMainVersionSwitcher === 'function') {
     setMainVersionSwitcher();
   }
 
