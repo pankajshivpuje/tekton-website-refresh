@@ -22,7 +22,7 @@ description: "Tekton is a cloud-native, open-source framework for creating CI/CD
 
 <div class="hero-buttons">
 <a href='{{< relurl "docs/getting-started/" >}}' class="not-prose hextra-hero-btn-primary">Get Started</a>
-<a href="https://github.com/tektoncd" class="not-prose hextra-hero-btn-alt" target="_blank" rel="noreferrer">View on GitHub</a>
+<a href="https://github.com/tektoncd/community/tree/main" class="not-prose hextra-hero-btn-alt" target="_blank" rel="noreferrer">Join the Community</a>
 </div>
 
 <div class="hero-pipeline" role="img" aria-label="Pipeline flow: Source, Build, Test, Deploy">
