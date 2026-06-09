@@ -80,5 +80,5 @@ example, `path="../sample.yaml"` does not work.
 {{% /alert %}}
 
 [ref-links]: https://www.markdownguide.org/basic-syntax/#reference-style-links
-[readfile-shortcode]: https://www.docsy.dev/docs/adding-content/shortcodes/#include-code-files
+[readfile-shortcode]: https://www.docsy.dev/docs/content/shortcodes/#include-code-files
 

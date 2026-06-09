@@ -152,8 +152,8 @@ platform, we encourage you to own your documentation.
 
 [tekton-slack]: https://github.com/tektoncd/community/blob/main/working-groups.md#documentation
 [tekton-tw-wg]: https://github.com/tektoncd/community/blob/main/working-groups.md#documentation
-[tabs]: https://www.docsy.dev/docs/adding-content/shortcodes/#tabbed-panes
-[readfile]: https://www.docsy.dev/docs/adding-content/shortcodes/#include-external-files
+[tabs]: https://www.docsy.dev/docs/content/shortcodes/#tabbed-panes
+[readfile]: https://www.docsy.dev/docs/content/shortcodes/#include-external-files
 [content-guidelines]: /docs/contribute/doc-con-content/
 [hugo-frontmatter]: https://gohugo.io/content-management/front-matter/
 [run-locally]: /docs/contribute/run-locally/
