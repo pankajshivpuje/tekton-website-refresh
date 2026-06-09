@@ -7,8 +7,6 @@ resources/_gen/
 public/**
 ## Allow redirect file.
 !public/_redirects
-assets/js/version-switcher.js
-assets/js/release-switcher.js
 
 # IDEs
 .vscode
